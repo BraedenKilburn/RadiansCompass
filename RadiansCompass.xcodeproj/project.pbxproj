@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		872AE13F291A16DA00B5ED92 /* UsefulCompassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872AE13E291A16DA00B5ED92 /* UsefulCompassApp.swift */; };
+		872AE13F291A16DA00B5ED92 /* RadiansCompass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872AE13E291A16DA00B5ED92 /* RadiansCompass.swift */; };
 		872AE141291A16DA00B5ED92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872AE140291A16DA00B5ED92 /* ContentView.swift */; };
 		872AE143291A16DA00B5ED92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872AE142291A16DA00B5ED92 /* Assets.xcassets */; };
 		872AE146291A16DA00B5ED92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872AE145291A16DA00B5ED92 /* Preview Assets.xcassets */; };
+		872AE150291A1A8800B5ED92 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872AE14F291A1A8800B5ED92 /* Marker.swift */; };
+		872AE153291A1BCA00B5ED92 /* CompassMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872AE152291A1BCA00B5ED92 /* CompassMarkerView.swift */; };
+		872AE157291A252700B5ED92 /* CompassHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872AE156291A252700B5ED92 /* CompassHeading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		872AE13B291A16DA00B5ED92 /* UsefulCompass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsefulCompass.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		872AE13E291A16DA00B5ED92 /* UsefulCompassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulCompassApp.swift; sourceTree = "<group>"; };
+		872AE13B291A16DA00B5ED92 /* RadiansCompass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadiansCompass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		872AE13E291A16DA00B5ED92 /* RadiansCompass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiansCompass.swift; sourceTree = "<group>"; };
 		872AE140291A16DA00B5ED92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		872AE142291A16DA00B5ED92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		872AE145291A16DA00B5ED92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		872AE14F291A1A8800B5ED92 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		872AE152291A1BCA00B5ED92 /* CompassMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassMarkerView.swift; sourceTree = "<group>"; };
+		872AE156291A252700B5ED92 /* CompassHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassHeading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +41,7 @@
 		872AE132291A16DA00B5ED92 = {
 			isa = PBXGroup;
 			children = (
-				872AE13D291A16DA00B5ED92 /* UsefulCompass */,
+				872AE13D291A16DA00B5ED92 /* RadiansCompass */,
 				872AE13C291A16DA00B5ED92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +49,22 @@
 		872AE13C291A16DA00B5ED92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				872AE13B291A16DA00B5ED92 /* UsefulCompass.app */,
+				872AE13B291A16DA00B5ED92 /* RadiansCompass.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		872AE13D291A16DA00B5ED92 /* UsefulCompass */ = {
+		872AE13D291A16DA00B5ED92 /* RadiansCompass */ = {
 			isa = PBXGroup;
 			children = (
-				872AE13E291A16DA00B5ED92 /* UsefulCompassApp.swift */,
-				872AE140291A16DA00B5ED92 /* ContentView.swift */,
+				872AE151291A1BB100B5ED92 /* App */,
+				872AE14D291A1A6A00B5ED92 /* Model */,
+				872AE14C291A1A6200B5ED92 /* View */,
+				872AE14E291A1A7100B5ED92 /* ViewModel */,
 				872AE142291A16DA00B5ED92 /* Assets.xcassets */,
 				872AE144291A16DA00B5ED92 /* Preview Content */,
 			);
-			path = UsefulCompass;
+			path = RadiansCompass;
 			sourceTree = "<group>";
 		};
 		872AE144291A16DA00B5ED92 /* Preview Content */ = {
@@ -67,12 +75,45 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		872AE14C291A1A6200B5ED92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				872AE140291A16DA00B5ED92 /* ContentView.swift */,
+				872AE152291A1BCA00B5ED92 /* CompassMarkerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		872AE14D291A1A6A00B5ED92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				872AE14F291A1A8800B5ED92 /* Marker.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		872AE14E291A1A7100B5ED92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				872AE156291A252700B5ED92 /* CompassHeading.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		872AE151291A1BB100B5ED92 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				872AE13E291A16DA00B5ED92 /* RadiansCompass.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		872AE13A291A16DA00B5ED92 /* UsefulCompass */ = {
+		872AE13A291A16DA00B5ED92 /* RadiansCompass */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 872AE149291A16DA00B5ED92 /* Build configuration list for PBXNativeTarget "UsefulCompass" */;
+			buildConfigurationList = 872AE149291A16DA00B5ED92 /* Build configuration list for PBXNativeTarget "RadiansCompass" */;
 			buildPhases = (
 				872AE137291A16DA00B5ED92 /* Sources */,
 				872AE138291A16DA00B5ED92 /* Frameworks */,
@@ -82,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = UsefulCompass;
+			name = RadiansCompass;
 			productName = UsefulCompass;
-			productReference = 872AE13B291A16DA00B5ED92 /* UsefulCompass.app */;
+			productReference = 872AE13B291A16DA00B5ED92 /* RadiansCompass.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 872AE136291A16DA00B5ED92 /* Build configuration list for PBXProject "UsefulCompass" */;
+			buildConfigurationList = 872AE136291A16DA00B5ED92 /* Build configuration list for PBXProject "RadiansCompass" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				872AE13A291A16DA00B5ED92 /* UsefulCompass */,
+				872AE13A291A16DA00B5ED92 /* RadiansCompass */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872AE157291A252700B5ED92 /* CompassHeading.swift in Sources */,
 				872AE141291A16DA00B5ED92 /* ContentView.swift in Sources */,
-				872AE13F291A16DA00B5ED92 /* UsefulCompassApp.swift in Sources */,
+				872AE153291A1BCA00B5ED92 /* CompassMarkerView.swift in Sources */,
+				872AE13F291A16DA00B5ED92 /* RadiansCompass.swift in Sources */,
+				872AE150291A1A8800B5ED92 /* Marker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,21 +310,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UsefulCompass/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RadiansCompass/Preview Content\"";
 				DEVELOPMENT_TEAM = JC42738BAR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Radian Compass";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location to determine your magnetic heading. You must allow location access for the most precise measurements.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.braedenkilburn.UsefulCompass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braedenkilburn.RadiansCompass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,21 +340,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UsefulCompass/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RadiansCompass/Preview Content\"";
 				DEVELOPMENT_TEAM = JC42738BAR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Radian Compass";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses your location to determine your magnetic heading. You must allow location access for the most precise measurements.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.braedenkilburn.UsefulCompass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braedenkilburn.RadiansCompass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		872AE136291A16DA00B5ED92 /* Build configuration list for PBXProject "UsefulCompass" */ = {
+		872AE136291A16DA00B5ED92 /* Build configuration list for PBXProject "RadiansCompass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				872AE147291A16DA00B5ED92 /* Debug */,
@@ -329,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		872AE149291A16DA00B5ED92 /* Build configuration list for PBXNativeTarget "UsefulCompass" */ = {
+		872AE149291A16DA00B5ED92 /* Build configuration list for PBXNativeTarget "RadiansCompass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				872AE14A291A16DA00B5ED92 /* Debug */,
